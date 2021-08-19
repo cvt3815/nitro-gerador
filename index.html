@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Gerador de nitro</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Project Nitro" />
+<meta property="og:description" content="Discord Nitro Generator" />
+<meta charset="utf-8">
+<style>
+@media (max-width: 500px) {
+textarea {
+  height: 100px;
+  line-height:1.25;
+}
+button {
+	background-color: #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:50px;
+	padding:50px 60px;
+	text-decoration:none;
+}
+}
+
+.button0 {
+  font-size:20px;
+  padding:50px 60px;
+}
+</style>
+</head>
+<body>
+</style>
+<style>
+  textarea {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #ffffff;
+    padding: 8px;
+    font-family: courier new;
+}
+
+body { 
+			background-image: url(https://i.pinimg.com/originals/7a/7d/cf/7a7dcfa6474ec4cbfa81113eebe3c0dc.jpg);
+			background-position: center center;
+			background-repeat: repeat;
+			background-attachment: fixed;
+	
+			background-color: #999;
+  
+}
+
+input {
+    background-color: #000;
+    color: #ffffff;
+}
+
+button {
+	background-color: #ffffff; 
+  cursor:pointer; 
+  text-align: center; 
+  font-family:Arial; 
+  font-size:17px; 
+  padding:7px 8px; 
+  text-decoration:none;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+<div>
+<h1 style="font-family: Roboto; color: #ffffff">Gerador de nitro</h1>
+<textarea id="a" rows="11" cols="100" readonly style="resize: none;">
+</textarea>
+<p></p>
+<a href="index0.html" style="font-family:Arial; color: #092BFE"></a>
+<p></p>
+<p style="font-family: Arial; color: #092BFE"></p>
+<input type="text" id="speed" value="12">
+<p></p>
+<button id='generate' class="button">
+  start
+</button>
+<p></p>
+<button id='stop' class="button">
+  stop
+</button>
+    <p></p>
+<button id='save' onclick="var rows = document.getElementById('b').value.split('\n').length -  1; download(rows + ' Coruscant-uncheked-nitro.txt', 'By discord.gg/coruscant\n\n' + document.getElementById('b').value + '\nDumped by [NitroGen-Coruscant]')" class="button">baixar codes</button>
+    <p></p>
+<button onclick="stop(); document.getElementById('a').value = ''; document.getElementById('b').value = '';" class="button" id="clear">clear</button>
+<textarea style="display: none;" id="b" rows="11" cols="100" readonly>
+</textarea>
+	<script src="main.js"></script>
+</div>
+	<p></p>
+
+</body>
+</html>
